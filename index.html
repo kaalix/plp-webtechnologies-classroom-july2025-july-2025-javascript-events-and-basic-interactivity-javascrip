@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xil'Art Sewing Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to <em>Xil'Art Sewing Workshop</em></h1>
+    <p>Unleash your creativity — sew, stitch, and style with us!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#schedule" class="nav-link">Schedule</a></li>
+      <li><a href="#register" class="nav-link">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Xil'Art</h2>
+      <p>Xil'Art invites all sewing enthusiasts — from beginners to experts — to join our hands-on workshops.</p>
+
+      <figure>
+        <img src="https://images.pexels.com/photos/12672239/pexels-photo-12672239.jpeg"
+             alt="Participants sewing" height="300" width="100%">
+        <figcaption>Xil’Art workshops in action — stitch, chat, create.</figcaption>
+      </figure>
+
+      <button id="toggleAboutBtn">Hide Description</button>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section id="schedule">
+      <h2>Upcoming Workshops</h2>
+
+      <div class="lists-container">
+        <div class="list-block">
+          <h3>Topics</h3>
+          <ul id="topicsList">
+            <!-- Filled dynamically by JavaScript -->
+          </ul>
+        </div>
+
+        <div class="list-block">
+          <h3>Learning Path</h3>
+          <ol>
+            <li>Start with basic hand stitching</li>
+            <li>Move to machine sewing</li>
+            <li>Create accessories</li>
+            <li>Pattern design</li>
+          </ol>
+        </div>
+
+        <div class="list-block">
+          <h3>Workshop Details</h3>
+          <dl>
+            <dt>Beginner Essentials</dt>
+            <dd>Intro to sewing tools and stitches.</dd>
+            <dt>Accessory Creation</dt>
+            <dd>Craft stylish pouches and tote bags.</dd>
+            <dt>Advanced Techniques</dt>
+            <dd>Garment construction & finishing.</dd>
+          </dl>
+        </div>
+      </div>
+
+      <table>
+        <caption>Schedule & Pricing</caption>
+        <thead>
+          <tr>
+            <th>Workshop</th>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>Fee</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleTable">
+          <!-- Filled by JS -->
+        </tbody>
+      </table>
+
+      <button id="highlightBtn">Highlight Cheapest Workshop</button>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <section id="register">
+      <h2>Register for a Workshop</h2>
+
+      <p id="formMessage"></p>
+
+      <form id="registrationForm" autocomplete="off">
+
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label>Full Name:</label>
+          <input type="text" id="fullname" placeholder="Irakoze Elsa">
+
+          <label>Email:</label>
+          <input type="text" id="email" placeholder="elsa@example.com">
+
+          <label>Phone Number:</label>
+          <input type="text" id="phone" placeholder="+25761000001">
+        </fieldset>
+
+        <fieldset>
+          <legend>Workshop Selection</legend>
+
+          <label>Choose Workshop:</label>
+          <select id="workshopSelect">
+            <option value="">-- Select --</option>
+            <option value="Beginner Essentials">Beginner Essentials – Sept 10</option>
+            <option value="Accessory Creation">Accessory Creation – Sept 17</option>
+            <option value="Advanced Techniques">Advanced Techniques – Sept 24</option>
+          </select>
+
+          <label>Experience (years):</label>
+          <input type="number" id="experience" placeholder="0">
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Xil'Art Sewing Workshop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
